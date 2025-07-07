@@ -4,32 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebChatSoftWare99</title>
-        <link rel="stylesheet" href={{ url_for('static', filename='./CSS/style.css') }}>
+        <link rel="stylesheet" href={{ url_for('static', filename='./CSS/homepage_styles.css') }}>
     </head>
     <body>
-        <script>
-            function hide() {
-                var x = document.getElementById("lista-programmi");
-                if (x.style.display === "none") {
-                  x.style.display = "block";
-                } else {
-                  x.style.display = "none";
-                }
-              }
-        </script>
-
         <header>
-            <button onclick = "hide()">Lista programmi</button>
             <h1>Webchatsoftware99</h1>
             <img src={{ url_for('static', filename="./img/logo.png") }} alt="logo" />
         </header>
         <main>
-            <aside class="Lista-programmi">
-                <ol>
-                <li><a href="/StayFocus">Stay Focus</a></li>
-                <li><a href="/NewsPopup">News Pop-up</a></li>
-                </ol>
-            </aside>
             <section id="ChiSono">
                 <h2>Chi sono</h2>
                 <p>Sono un studente di informatica al terzo anno di ITIS che sta cercando di diventare <br />un Software Enginear in abito di Inteligenze Artificiali e Data Science</p>
@@ -41,13 +23,16 @@
             </section>
             <br />
             <section id="UltimoProgetto">
-                <h2>Ultimo Progetto</h2>
+                <h2>I miei progetti finora</h2>
                 <button><a href="/NewsPopup">News Pop-up</a></button>
+                <br>
+                <button><a href="/StayFocus">Stay Focus</a></button>
             </section>
         </main>
         <nav>
             <h2>Contact me</h2>
             <p>Email: <a href="mailto:webchatsoftware@gmail.com">webchatsoftware@gmail.com</a></p>
+            <p><a href="https://it.fiverr.com/danymottu?public_mode=true">Fiverr</a></p>
         </nav>
         </body>
 </html>
