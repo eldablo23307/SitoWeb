@@ -9,7 +9,7 @@ def homepage():
 
 @app.route("/StayFocus")
 def StayFocus():
-    return render_template("Stayfocus.html.jinja")
+    return render_template("StayFocus.html.jinja")
 
 @app.route("/NewsPopup")
 def NewsPopup():
